@@ -36,11 +36,15 @@ namespace LineCompoarison
              double LengthSecondLine = Math.Sqrt((Math.Pow((X4 - X3), 2)) + (Math.Pow((Y4 - Y3), 2)));
              Console.WriteLine("the lenght of Secomd line: " + LengthSecondLine);
 
-            if (LengthFirstLine == LengthSecondLine)
+            if (LengthFirstLine > LengthSecondLine)
+
+                Console.WriteLine("the first line is greater than second line ");
+
+            else if (LengthFirstLine == LengthSecondLine)
 
                 Console.WriteLine("Lines are equal");
             else
-                Console.WriteLine("Lines are not equal");
+                Console.WriteLine("second line is greater than first line");
             
             Console.ReadLine();
         }
